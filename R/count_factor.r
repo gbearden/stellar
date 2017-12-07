@@ -13,7 +13,7 @@ count_factor <- function(df){
 	select_if(is.factor) %>% 
 	gather('variable', 'value', 1:ncol(.)) %>% 
 	group_by(variable) %>% 
-	summarise(n_factors = n_distinct(value)) %>%
+	summarise(n_factors = n_distinct(value, na.rm = TRUE)) %>%
 	arrange(desc(n_factors))
 
     return(factors_df)
