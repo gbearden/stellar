@@ -33,7 +33,9 @@ dummify <- function(data, id_var) {
                 )
     }
 
-    output <- output %>% select(-contains("V1"))
+    output <- output %>% 
+        select(-contains("V1")) %>%
+        select(-contains("<NA>"))
 
     return(output)
 }
