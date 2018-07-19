@@ -2,8 +2,9 @@
 
 export(add_months)
 export(analysis_names)
-export(count_factor)
+export(count_factors)
 export(count_na)
+export(dummify)
 export(normalize)
 export(num_to_date)
 export(trim)
