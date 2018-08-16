@@ -8,7 +8,7 @@
 dummify <- function(data, id_var) {
     require(tidyverse)
 
-    df <- data
+    df <- data %>% as.data.frame()
 
     cols <- df %>%
         mutate_if(is.factor, as.character) %>%
