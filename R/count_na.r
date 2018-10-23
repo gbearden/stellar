@@ -1,5 +1,6 @@
 #' This function counts NAs in a data frame for each variable
-#' @param 
+#' Note that input data object must be a data frame
+#' @param
 #' @keywords na, data frame
 #' @export
 #' @examples
